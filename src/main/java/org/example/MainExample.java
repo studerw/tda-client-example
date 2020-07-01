@@ -16,7 +16,7 @@ public class MainExample {
     Quote quote = client.fetchQuote("MSFT");
     EquityQuote equityQuote = (EquityQuote) quote;
     LOGGER.debug("Current price of MSFT: {}", equityQuote.getAskPrice());
-    
+
     System.exit(0);
   }
 
