@@ -20,4 +20,17 @@ Run the `MainExample` class in your IDE. Or from the command line:
 
 On Windows, you'll probably have to add quotes to the `-Dexec...`.
 
+Depending on how you've configured the `logback.xml` file in `src/main/resources`,
+you'll end up with as little output as the following:
 
+```shell
+user@ubuntu:~/workspace/github/tda-client-example$ mvn exec:java -Dexec.cleanupDaemonThreads=false
+[INFO] Scanning for projects...
+[INFO]
+[INFO] -------------------< org.example:tda-client-example >-------------------
+[INFO] Building tda-client-example 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ tda-client-example ---
+2021-01-13 00:19:24.199 [org.example.MainExample.main()] DEBUG org.example.MainExample - Current price of MSFT: 215.14
+```
