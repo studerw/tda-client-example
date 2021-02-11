@@ -15,6 +15,12 @@ public class MainExample {
     final OptionChain ostk = client.getOptionChain("OSTK");
     LOGGER.debug("{}", ostk);
 
+    final OptionChain srne = client.getOptionChain("SRNE");
+    LOGGER.debug("{}", srne);
+
+    final OptionChain ino = client.getOptionChain("INO");
+    LOGGER.debug("{}", ino);
+
     System.exit(0);
   }
 
